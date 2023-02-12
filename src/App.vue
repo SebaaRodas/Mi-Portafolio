@@ -5,7 +5,7 @@
     <router-link to="/proyectos">Proyectos</router-link>|
     <router-link to="/certificaciones">Certificaciones</router-link> |
     <router-link to="/contacto">Contacto</router-link> |
-    <router-link to="/">Linkedin</router-link>
+    <router-link to="/">LinkedIn</router-link>
   </nav>
   <router-view/>
 </template>
