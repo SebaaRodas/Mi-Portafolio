@@ -1,15 +1,16 @@
 <template>
-  <nav>
-    <router-link to="/">SR</router-link> |
-    <router-link to="/about">Sobre mi</router-link> | 
-    <router-link to="/proyectos">Proyectos</router-link>|
-    <router-link to="/certificaciones">Certificaciones</router-link> |
-    <router-link to="/contacto">Contacto</router-link> |
-    <router-link to="/">LinkedIn</router-link>
-  </nav>
+  <Header />
+  
   <router-view/>
 </template>
-
+<script>
+import Header from './components/Header.vue';
+export default {
+  components: {
+    Header
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -20,12 +21,18 @@
 }
 
 nav {
-  padding: 30px;
+  padding: 20px;
 }
 
 nav a {
   font-weight: bold;
   color: #2c3e50;
+}
+
+body{
+  background-image: linear-gradient(to right top, #1b3356, #1e2b48, #1e243b, #1c1d2e, #181722);
+    min-height: 100vh;
+    margin: 0 auto;
 }
 
 nav a.router-link-exact-active {
